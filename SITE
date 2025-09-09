@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>1ne Click Media — Full-Service Digital Marketing Agency for Growth</title>
+<meta name="description" content="1ne Click Media is a top-tier digital marketing agency offering expert SEO services, PPC management, web development, and content strategy to drive measurable growth and ROI for businesses in Delhi, Ludhiana, and beyond." />
+<meta name="keywords" content="digital marketing agency, seo services, ppc management, social media marketing, content marketing, web development, e-commerce solutions, online advertising, lead generation, brand awareness, 1ne click media" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256' 256'%3E%3Cpath fill='%23ff2a55' d='M128 14a114 114 0 1 0 0 228 114 114 0 0 0 0-228zm0 28a86 86 0 1 1 0 172 86 86 0 0 1 0-172z'/%3E%3Ctext x='50%' y='57%' text-anchor='middle' font-size='110' font-family='Orbitron' fill='%23ff2a55'%3E1C%3C/text%3E%3C/svg%3E">
+
+<style>
+/* =========================================
+   ENHANCED THEME & ADVANCED RESET
+========================================= */
+
+/* NIGHT (Moon) — Default Theme */
+:root{
+  --bg: #0d1117; --text:#c9d1d9; --muted:#8b949e;
+  --brand:#ff2a55; --brand-2:#a200ff; --accent:#00f7ff;
+  --card: rgba(22, 27, 34, 0.7);
+  --border: rgba(255, 255, 255, 0.1);
+  --ring: #ff2a55aa; --ok:#38d996; --warn:#ffcc00; --error:#ff5a5a;
+  --scroll:#ff2a55; --scroll-track:#161b22;
+  --btn:#ff2a55; --btn-t:#fff;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+  --glow: 0 0 15px rgba(255, 42, 85, 0.5);
+  --grad-text: linear-gradient(90deg, var(--brand), var(--accent));
+  --grad-bg: radial-gradient(80vmax 60vmax at 10% -10%, rgba(162,0,255,.15), transparent 60%),
+              radial-gradient(80vmax 60vmax at 110% 10%, rgba(0,247,255,.12), transparent 60%),
+              radial-gradient(90vmax 60vmax at 50% 120%, rgba(255,42,85,.10), transparent 60%);
+}
+/* DAY (Sun) Theme */
+:root[data-theme="day"]{
+  --bg:#f8f9fa; --text:#212529; --muted:#6c757d;
+  --brand:#ff7a00; --brand-2:#ffbf00; --accent:#0066ff;
+  --card: rgba(255, 255, 255, 0.8);
+  --border: rgba(0, 0, 0, 0.1);
+  --ring:#ff7a00aa; --scroll:#ff7a00; --scroll-track:#e9ecef;
+  --btn:#ff7a00; --btn-t:#fff;
+  --shadow: 0 8px 25px rgba(0,0,0,.1);
+  --glow: 0 0 15px rgba(255, 122, 0, 0.5);
+  --grad-text: linear-gradient(90deg, var(--brand), var(--accent));
+  --grad-bg: radial-gradient(80vmax 60vmax at 10% -10%, rgba(255,186,122,.35), transparent 60%),
+             radial-gradient(80vmax 60vmax at 110% 10%, rgba(255,191,0,.25), transparent 60%),
+             radial-gradient(90vmax 60vmax at 50% 120%, rgba(255,122,0,.20), transparent 60%);
+}
+/* TERMINAL (Matrix) Theme */
+:root[data-theme="terminal"]{
+  --bg:#010e01; --text:#00ff41; --muted:#008f25;
+  --brand:#00ff41; --brand-2:#39ff14; --accent:#aaff00;
+  --card: rgba(0, 20, 0, 0.7);
+  --border: rgba(0, 255, 65, 0.2);
+  --ring:#00ff41aa; --ok:#38d996; --warn:#ffcc00; --error:#ff5a5a;
+  --scroll:#00ff41; --scroll-track:#002205;
+  --btn:#00ff41; --btn-t:#010e01;
+  --shadow: 0 10px 30px rgba(0,20,0,.5);
+  --glow: 0 0 15px rgba(0, 255, 65, 0.7);
+  --grad-text: linear-gradient(90deg, var(--brand), var(--accent));
+  --grad-bg: radial-gradient(circle at 50% 50%, rgba(0, 255, 65, 0.1) 0%, transparent 40%);
+}
+
+*{box-sizing:border-box; margin:0; padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg); color: var(--text); line-height:1.6; overflow-x:hidden;
+  background-image: var(--grad-bg);
+  background-attachment: fixed;
+  transition: background-color .3s, color .3s;
+}
+a{color:var(--accent);text-decoration:none; transition: color .2s}
+a:hover{color:var(--brand)}
+img, video{max-width:100%; height:auto; display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* =========================================
+   GLOBAL UI ELEMENTS & ANIMATIONS
+========================================= */
+#scroll-progress{position:fixed; top:0; left:0; height:4px; background:var(--grad-text); width:0%; z-index:10000; transition:width .1s linear}
+.toast{position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:linear-gradient(90deg, var(--ok), #38d9c9); color:#000; padding:12px 20px; border-radius:10px; z-index:10001; box-shadow:var(--shadow); opacity:0; visibility:hidden; transition:opacity .3s, transform .3s; font-weight:600}
+.toast.show{opacity:1; visibility:visible; transform:translate(-50%, -10px)}
+
+/* =========================================
+   CUSTOM SCROLLBAR & ADVANCED CURSOR
+========================================= */
+html::-webkit-scrollbar{width:14px}
+html::-webkit-scrollbar-track{background:var(--scroll-track)}
+html::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg, var(--scroll) 0%, var(--brand-2) 100%);
+  border-radius:10px;border:3px solid var(--scroll-track); box-shadow: inset 0 0 6px #0004;
+}
+.cursor{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;mix-blend-mode:difference; display: none;}
+@media (pointer: fine) { .cursor { display: block; } } /* Show cursor only on devices with fine pointers */
+
+.cursor .dot{
+    width:8px; height:8px; border-radius:50%; background:#fff;
+    position:fixed; top:0; left:0; will-change: transform;
+}
+.cursor .ring{
+    width:40px; height:40px; border-radius:50%; border:2px solid #fff;
+    position:fixed; top:0; left:0; will-change: transform;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* =========================================
+   LOADER (ENHANCED)
+========================================= */
+#loader{
+  position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;z-index:9998;color:var(--text);transition: opacity .5s, visibility .5s
+}
+#loader.hidden{opacity:0; visibility:hidden}
+.gears{position:relative;width:180px;height:180px;filter:drop-shadow(0 6px 30px #000a)}
+.gear{position:absolute;inset:0;margin:auto;width:140px;height:140px;border-radius:50%;border:10px solid; border-image: var(--grad-text) 1; border-top-color:transparent;border-right-color:transparent;animation:spin 3.5s linear infinite}
+.gear.small{width:90px;height:90px;left:65px;top:65px; border-image: linear-gradient(90deg, var(--accent), var(--brand-2)) 1; border-left-color:transparent;border-bottom-color:transparent;animation:spinR 2.2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinR{to{transform:rotate(-360deg)}}
+.loader-text{font:700 14px/1 'Orbitron',system-ui;letter-spacing:3px;margin-top:24px;text-transform:uppercase;
+  background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+/* =========================================
+   HEADER / NAV (ENHANCED FOR MOBILE)
+========================================= */
+header{
+  position:sticky;top:0; background:var(--card);
+  backdrop-filter: blur(12px) saturate(180%); -webkit-backdrop-filter: blur(12px) saturate(180%);
+  z-index: 9990; border-bottom:1px solid var(--border);
+  transition: transform .3s, background .3s;
+}
+header.header-hidden { transform: translateY(-100%); }
+.nav{display:flex;align-items:center;gap:18px; padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900; transition: transform 0.3s ease; flex-shrink: 0;}
+.logo:hover{ transform: scale(1.05); }
+.logo .glyph{font-family:'Orbitron'; color:var(--brand); letter-spacing:1px; font-size: 20px;}
+.nav .links{display:flex;gap:16px;flex-wrap:wrap; margin-left:24px}
+.nav a{color:var(--text);opacity:.85;font-weight:500;position:relative; padding: 4px 0; transition: opacity .2s}
+.nav a:after{content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--grad-text); transition:width .3s}
+.nav a:hover{opacity:1}
+.nav a:hover:after{width:100%}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.search input{background:transparent;border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;min-width:220px; transition: all .3s}
+.search input:focus{border-color: var(--brand); box-shadow: 0 0 0 3px var(--ring);}
+.btn, button{background:var(--btn);color:var(--btn-t);border:none;border-radius:12px;padding:10px 18px;font-weight:700;cursor:pointer;box-shadow:var(--shadow);transition:transform .2s, box-shadow .2s; display:inline-flex; align-items:center; gap:8px; justify-content:center; background-size: 200% auto; background-image: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 50%, var(--brand) 100%)}
+.btn:hover{transform:translateY(-3px) scale(1.03); box-shadow:var(--glow); background-position: right center}
+
+.theme-toggle{display:flex;align-items:center;gap:8px}
+.toggle{
+  inline-size:84px; block-size:30px; border-radius:20px; position:relative; background:var(--border); cursor:pointer;
+  display: flex; align-items: center; justify-content: space-around; padding: 0 4px;
+}
+.knob{position:absolute;inset:3px;inline-size:24px;block-size:24px;border-radius:50%;background:var(--brand);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.toggle[data-mode="day"] .knob{transform:translateX(0)}
+.toggle[data-mode="night"] .knob{transform:translateX(27px)}
+.toggle[data-mode="terminal"] .knob{transform:translateX(54px)}
+.icon{width:20px;height:20px; color: var(--muted); transition: color .2s}
+.toggle:hover .icon{color: var(--text)}
+
+/* Mobile Navigation */
+#mobile-menu-btn { display: none; background: none; border: none; color: var(--text); font-size: 28px; cursor: pointer; z-index: 10000; padding: 0 5px; }
+#mobile-nav {
+    position: fixed; top: 0; right: -100%; width: min(80vw, 300px); height: 100vh;
+    background: var(--bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    z-index: 9995;
+    transition: right 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+    border-left: 1px solid var(--border);
+}
+#mobile-nav.open { right: 0; }
+#mobile-nav a { font-size: 20px; font-weight: 600; }
+.mobile-nav-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 9994;
+    opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s;
+}
+.mobile-nav-overlay.open { opacity: 1; visibility: visible; }
+
+/* Typing animation styles */
+#typing-container {
+    position: relative;
+    display: inline-block;
+}
+.typing-cursor {
+    display: inline-block;
+    background-color: var(--brand);
+    margin-left: 3px;
+    width: 4px;
+    height: 1em;
+    animation: blink 1s infinite;
+    vertical-align: text-bottom;
+}
+@keyframes blink {
+    0%, 100% { background-color: var(--brand); }
+    50% { background-color: transparent; }
+}
+
+/* =========================================
+   HERO (with Particle Canvas)
+========================================= */
+.hero{
+  position:relative;min-height:90vh;display:grid;place-items:center;overflow:hidden;
+}
+#hero-3d-bg {position:absolute; width:100%; height:100%; top:0; left:0; z-index:0;}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.05) brightness(.6); opacity:0.8;}
+:root[data-theme="day"] .hero video{filter:saturate(1.05) contrast(1.0) brightness(.9)}
+.hero .overlay{position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 40%, #0003 0%, #000a 60%, transparent 100%)}
+.hero .content{position:relative;z-index:1;text-align:center;padding:80px 20px}
+h1{font:800 clamp(32px,7vw,72px)/1.05 'Inter', sans-serif;margin:0; text-shadow: 0 4px 20px #000a}
+h1 .highlight{
+ background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+ font-family: 'Orbitron'; letter-spacing: 1px;
+}
+.lead{font-size:clamp(16px,2.1vw,22px);opacity:.9;margin-top:14px; max-width: 750px; margin-left:auto; margin-right:auto;}
+.cta{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.badges{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.badge{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:13px; font-weight:500; backdrop-filter:blur(5px)}
+
+/* =========================================
+   SECTION BASE & CARD STYLES (ENHANCED)
+========================================= */
+section{padding:96px 0;position:relative}
+section:not(.hero) {
+    border-top: 1px solid var(--border);
+}
+.section-title{font:800 clamp(30px, 4vw, 42px) 'Inter', sans-serif;margin:0 0 12px; text-align:center}
+.section-title .highlight {color: var(--brand)}
+.section-sub{color:var(--muted);margin-bottom:48px; text-align:center; max-width: 700px; margin-left:auto; margin-right:auto;}
+.grid{display:grid;gap:24px}
+.grid.col-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.col-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.col-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;
+  box-shadow:var(--shadow);position:relative;overflow:hidden; backdrop-filter:blur(10px);
+  transition: transform 0.4s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s;
+  will-change: transform; transform-style: preserve-3d;
+}
+.card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 16px; border: 2px solid transparent;
+    background: linear-gradient(120deg, var(--brand), var(--accent)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0; transition: opacity 0.4s; pointer-events: none;
+}
+.card:hover{
+  transform: translateY(-10px) scale(1.03) perspective(1000px) rotateX(2deg) rotateY(-2deg); 
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+}
+.card:hover::before { opacity: 1; }
+.card .shine{position:absolute;inset:-1px;background:conic-gradient(from var(--angle, 0deg),transparent,transparent, #fff3 270deg, transparent);mask: linear-gradient(#000, transparent 50%);animation:rotate 8s linear infinite;opacity:.25; pointer-events:none}
+@keyframes rotate{to{--angle: 360deg}}
+
+.kpi{display:flex;align-items:center;gap:14px}
+.kpi .num{font:800 42px/1 'Orbitron', monospace;color:var(--brand)}
+hr.sep{border:0;border-top:1px dashed var(--border);margin:48px 0}
+
+/* =========================================
+   ICONS & UI COMPONENTS
+========================================= */
+.svg-ico{width:28px;height:28px; color:var(--brand)}
+.icon-wrap{display:flex;align-items:center;gap:12px; font-weight:700; font-size:18px; margin-bottom:12px}
+.icon-wrap i {font-size: 28px; color:var(--brand)}
+ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.feature-list li {display:flex; align-items:flex-start; gap:10px}
+ul.feature-list i {color:var(--ok); font-size:20px; flex-shrink: 0; margin-top: 4px;}
+
+/* =========================================
+   EXPANDED SERVICES SECTION
+========================================= */
+.service-card {
+    text-align: center; padding: 32px 24px;
+}
+.service-card p { min-height: 80px; }
+.service-icon {
+    font-size: 48px; line-height: 1; color: var(--brand);
+    margin-bottom: 20px; transition: transform 0.4s cubic-bezier(.2,.8,.2,1), color 0.3s; display: inline-block;
+}
+.service-card:hover .service-icon {
+    transform: scale(1.2) rotate(15deg); color: var(--accent);
+}
+.service-card h3 { font-size: 20px; margin-bottom: 8px; }
+
+/* =========================================
+   PRICING / E-COMMERCE
+========================================= */
+.price{font:800 48px/1 'Orbitron', monospace}
+.price span {font: 600 16px 'Inter'; color:var(--muted)}
+.tag{display:inline-block;border-radius:999px;padding:6px 12px;background:#ffffff0e;border:1px solid var(--border);font-size:12px; font-weight: 500;}
+.pack-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:24px}
+#cartBtn {position:relative}
+#cart-count {position:absolute; top:-5px; right:-8px; background:var(--error); color:white; font-size:11px; font-weight:700; width:20px; height:20px; border-radius:50%; display:grid; place-items:center; line-height:1}
+
+.cart{
+  position:fixed;right:-100%;bottom:0;top:0;background:var(--bg);border-left:1px solid var(--border);width:min(420px,95vw);
+  box-shadow:var(--shadow);z-index:9991;display:flex; flex-direction:column;
+  transition: right .4s cubic-bezier(.2,.8,.2,1);
+}
+.cart.open{right:0}
+.cart-header{padding:18px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center}
+.cart-header h4{margin:0; font-size:20px}
+.cart-body{flex-grow:1; overflow-y:auto; padding:18px}
+.cart .item{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--border)}
+.cart .item-info{flex-grow:1}
+.cart .item-info div{font-weight:600}
+.cart .item-info small{color:var(--muted)}
+.cart .quantity{display:flex; align-items:center; gap:6px}
+.cart .quantity button {padding: 4px 8px; border-radius:6px}
+.cart .item .remove-btn {background:none; border:none; color:var(--error); font-size:24px}
+.cart-footer{padding:18px; border-top:1px solid var(--border); background:var(--card)}
+.cart .total{display:flex;justify-content:space-between;font-weight:800;font-size:18px;padding:12px 0}
+.cart .checkout{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+
+/* =========================================
+   MODALS & COOKIE BANNER
+========================================= */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:none;place-items:center;z-index:9992; backdrop-filter:blur(8px); opacity:0; transition:opacity .3s}
+.modal.open{display:grid; opacity:1}
+.modal .panel{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  max-width:640px;width:94vw;padding:24px; transform:scale(0.95); transition:transform .3s
+}
+.modal.open .panel{transform:scale(1)}
+.form{display:grid;gap:14px; margin-top: 20px;}
+.form input,.form textarea,select{background:rgba(0,0,0,0.2); color:var(--text); border:1px solid var(--border);border-radius:12px;padding:12px; transition:all .3s}
+.form input:focus,.form textarea:focus,select:focus {border-color: var(--brand); box-shadow: 0 0 0 3px var(--ring);}
+:root[data-theme="day"] .form input,:root[data-theme="day"] .form textarea,:root[data-theme="day"] select{background:#fff}
+
+#video-lightbox .panel {max-width: 90vw; width:auto; padding:8px; background: #000;}
+#video-lightbox iframe {width: 88vw; height: calc(88vw * 9 / 16); max-height: 85vh; border:none; border-radius:12px}
+
+.cookie{
+  position:fixed; left:18px; right:18px; bottom:-120%; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px;
+  display:flex; justify-content:space-between; align-items:center; gap:16px; z-index:9990; 
+  transition:bottom .5s cubic-bezier(.2,.8,.2,1); backdrop-filter:blur(10px);
+}
+.cookie.show{bottom:18px}
+.cookie p { margin: 0; font-size: 14px; }
+.cookie a { color: var(--accent); text-decoration: underline; }
+.cookie-actions { display: flex; gap: 12px; flex-shrink: 0; }
+.btn.btn-secondary { background: var(--border); color: var(--text); }
+.btn.btn-secondary:hover { background: var(--scroll-track); }
+
+
+/* =========================================
+   NEW: GEMINI AI STRATEGY MODAL
+========================================= */
+#strategyResult h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--brand);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border);
+}
+#strategyResult h4:first-child { margin-top: 0; }
+#strategyResult ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+#strategyResult li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+#strategyResult li::before {
+  content: '✓';
+  color: var(--ok);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+#strategyResult p {
+    margin-bottom: 16px;
+}
+#services-checklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: rgba(0,0,0,0.2);
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+#services-checklist label:first-child {
+    grid-column: 1 / -1;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--muted);
+}
+#services-checklist div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#services-checklist input {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+#services-checklist label {
+    font-size: 14px;
+}
+
+/* =========================================
+   NEW SECTIONS: CLIENTS, TESTIMONIALS, FAQ
+========================================= */
+.client-logos {display:flex; align-items:center; justify-content:space-around; gap:24px; flex-wrap:wrap; filter:grayscale(1) brightness(1.5); opacity:0.7; transition: all .3s}
+.client-logos:hover {filter:none; opacity:1}
+.client-logos img {max-height:40px; width:auto;}
+.testimonial-slider {padding: 0 40px;}
+.testimonial-card {text-align:center; padding: 24px;}
+.testimonial-card blockquote {font-size:18px; font-style:italic; color:var(--muted); margin-bottom:16px}
+.testimonial-card cite {font-weight:700; font-style:normal}
+.testimonial-card cite span {display:block; font-weight:400; color:var(--brand); font-size:14px}
+.swiper-button-next, .swiper-button-prev {color: var(--brand) !important}
+.faq-accordion{display:grid; gap:12px; max-width:800px; margin:0 auto}
+.faq-item{border:1px solid var(--border); border-radius:12px; background: var(--card); transition: background 0.3s;}
+.faq-item:hover { background: rgba(255,255,255,0.05); }
+.faq-question{padding:18px; font-weight:600; cursor:pointer; display:flex; justify-content:space-between; align-items:center;}
+.faq-question i{transition:transform .3s}
+.faq-answer{max-height:0; overflow:hidden; transition:max-height .4s ease-out, padding .4s ease-out; padding: 0 18px;}
+.faq-item.active .faq-question i{transform:rotate(45deg)}
+.faq-item.active .faq-answer{max-height:300px; padding: 0 18px 18px;}
+
+/* =========================================
+   TIMELINE / TOURS / MAPS / FOOTER
+========================================= */
+.timeline{border-left:2px dashed var(--border);margin-left:10px;padding-left:28px;display:grid;gap:24px}
+.timeline .node{position:relative; transition: transform 0.3s ease;}
+.timeline .node::before{content:"";position:absolute;left:-35px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand); border: 3px solid var(--bg); box-shadow: 0 0 0 4px var(--brand); transition: box-shadow 0.3s ease, background-color 0.3s;}
+.timeline .node:hover { transform: translateX(10px); }
+.timeline .node:hover::before { box-shadow: 0 0 15px var(--brand); background-color: var(--accent); }
+.tours{display:grid;gap:12px}
+.tour{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);padding:14px;border-radius:12px; transition: all .3s}
+.tour:hover {border-color:var(--brand); transform:translateX(8px) scale(1.02);}
+.maps{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+iframe.map{width:100%;height:320px;border:0;border-radius:14px;box-shadow:var(--shadow); filter: grayscale(1) invert(1) contrast(1.2); transition: filter .3s;}
+:root[data-theme="day"] iframe.map{filter:none}
+iframe.map:hover {filter:none}
+footer{padding:48px 0;border-top:1px solid var(--border); background:var(--card)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a {padding: 8px 14px}
+
+/* =========================================
+   CEO / TEAM SECTION
+========================================= */
+.ceo-section {
+    display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px;
+    align-items: center; background: var(--card); padding: 32px; border-radius: 20px; margin-bottom: 48px;
+}
+.ceo-image img {
+    width: 100%; border-radius: 16px; box-shadow: var(--shadow); border: 3px solid var(--border);
+}
+.ceo-info h2 { font-size: 32px; font-family: 'Orbitron'; color: var(--brand); margin: 0;}
+.ceo-info h3 { font-size: 18px; color: var(--muted); margin-bottom: 16px; font-weight: 500;}
+.ceo-info p { margin-bottom: 24px; }
+.ceo-socials { display: flex; gap: 12px; }
+.ceo-socials a { font-size: 24px; color: var(--muted); }
+.ceo-socials a:hover { color: var(--brand); transform: scale(1.1); }
+
+/* =========================================
+   FLOATERS (WHATSAPP, BACK-TO-TOP)
+========================================= */
+.floaters {position:fixed; right:18px; bottom:18px; z-index:999; display:flex; flex-direction:column; gap:12px}
+.floater-btn{
+  display:grid;place-items:center;width:56px;height:56px;border-radius:50%;
+  color:#fff;font-weight:900;box-shadow:var(--shadow);transform:translateY(0) scale(1);transition:transform .2s, box-shadow .2s;
+}
+.floater-btn:hover{transform:translateY(-3px) scale(1.05); box-shadow: var(--glow)}
+.float-whatsapp{background:#25D366}
+#back-to-top{background:var(--brand); opacity:0; visibility:hidden; transform:translateY(20px); transition: all .3s}
+#back-to-top.show{opacity:1; visibility:visible; transform:translateY(0)}
+
+/* =========================================
+   SCROLL REVEAL ANIMATIONS (ENHANCED)
+========================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition-property: opacity, transform;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+.reveal.show { opacity: 1; transform: translateY(0); }
+
+/* Staggered animation for grid items */
+.grid .reveal { transition-delay: var(--delay, 0s); }
+
+small.addr{color:var(--muted);display:block;margin-top:6px}
+
+/* =========================================
+   RESPONSIVE DESIGN (IMPROVED)
+========================================= */
+@media (max-width: 1024px) {
+    .nav .links, .search { display: none; }
+    #mobile-menu-btn { display: block; }
+    .grid.col-4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 768px) {
+    section { padding: 64px 0; }
+    .hero { min-height: 80vh; }
+    h1 { font-size: clamp(36px, 10vw, 48px); }
+    .lead { font-size: clamp(16px, 4vw, 18px); }
+    .grid.col-2, .grid.col-3, .grid.col-4 { grid-template-columns: 1fr; }
+    .maps { grid-template-columns: 1fr; }
+    .ceo-section { grid-template-columns: 1fr; text-align: center; }
+    .ceo-socials { justify-content: center; }
+    .tour { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .cookie { flex-direction: column; text-align: center; }
+    .kpi { flex-direction: column; text-align: center; }
+    .kpi .num { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+    .nav { padding: 12px 0; }
+    .logo .glyph { font-size: 16px; }
+    .btn { padding: 8px 14px; font-size: 14px; }
+    .cta { gap: 10px; }
+    #services-checklist { grid-template-columns: 1fr; }
+    .nav-right > .btn { display: none; } /* Hide enquiry button on smallest screens */
+    #cartBtn { display: inline-flex; } /* Ensure cart button is visible */
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+<div class="cursor" aria-hidden="true"><div class="ring"></div><div class="dot"></div></div>
+<div id="loader" role="status" aria-live="polite">
+  <div>
+    <div class="gears"><div class="gear"></div><div class="gear small"></div></div>
+    <div class="loader-text">Compiling Growth Engine…</div>
+  </div>
+</div>
+
+<header id="main-header">
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--brand);width:24px;height:24px;"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 16V12L14.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="glyph">1ne Click Media</span>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="search">
+        <input id="siteSearch" type="search" placeholder="Search sections… " />
+      </div>
+      <div class="theme-toggle">
+        <div class="toggle" id="themeToggle" data-mode="night" title="Toggle Theme">
+          <i class="ph-bold ph-sun"></i><i class="ph-bold ph-moon"></i><i class="ph-bold ph-terminal-window"></i><div class="knob"></div>
+        </div>
+      </div>
+      <button class="btn" id="enquiryBtn"><i class="ph-bold ph-paper-plane-tilt"></i>Enquiry</button>
+      <button class="btn" id="cartBtn" title="Open cart"><i class="ph-bold ph-shopping-cart-simple"></i><span id="cart-count">0</span></button>
+      <button id="mobile-menu-btn" aria-label="Open navigation menu"><i class="ph-bold ph-list"></i></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<nav id="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<main id="home">
+  <section class="hero">
+    <div id="hero-3d-bg"></div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="content container">
+      <h1><span class="highlight"> AI-Powered </span> <span id="typing-container"></span></h1>
+      <p class="lead">We are <strong>1ne Click Media</strong>, a full-service digital marketing agency. We architect performance marketing campaigns, leverage AI-powered analytics, and deliver conversion-obsessed design for ambitious brands seeking scalable online growth.</p>
+      <div class="cta">
+        <button class="btn" onclick="document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"><i class="ph-bold ph-rocket-launch"></i> View Plans</button>
+        <button class="btn" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})"><i class="ph-bold ph-video"></i> Our Work</button>
+        <a class="btn" href="https://wa.me/918288999923" target="_blank" rel="noopener"><i class="ph-bold ph-whatsapp-logo"></i> WhatsApp Us</a>
+      </div>
+      <div class="badges">
+        <span class="badge"><i class="ph-bold ph-gear-six"></i> Marketing Automation</span>
+        <span class="badge"><i class="ph-bold ph-brain"></i> AI-Driven Insights</span>
+        <span class="badge"><i class="ph-bold ph-shield-check"></i> Data Security</span>
+        <span class="badge"><i class="ph-bold ph-chart-line-up"></i> ROI-Focused Strategy</span>
+      </div>
+    </div>
+  </section>
+  
+  <section id="clients" class="container reveal">
+      <h2 class="section-title">Powering Growth for Leading <span class="highlight">Brands</span></h2>
+      <div class="client-logos">
+          <img src="https://logo.clearbit.com/google.com" alt="Google Logo">
+          <img src="https://logo.clearbit.com/meta.com" alt="Meta Logo">
+          <img src="https://logo.clearbit.com/amazon.com" alt="Amazon Logo">
+          <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft Logo">
+          <img src="https://logo.clearbit.com/spotify.com" alt="Spotify Logo">
+          <img src="https://logo.clearbit.com/slack.com" alt="Slack Logo">
+      </div>
+  </section>
+
+  <section id="services">
+      <div class="container reveal">
+        <h2 class="section-title">Our Integrated Digital Marketing <span class="highlight">Services</span></h2>
+        <p class="section-sub">We don't just offer services; we build integrated growth engines. Our expertise spans the entire digital ecosystem, from search engine optimization to advanced analytics, ensuring every channel works in harmony to drive exceptional results and brand awareness.</p>
+        <div class="grid col-4">
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-magnifying-glass"></i></div>
+            <h3>SEO Engineering</h3>
+            <p>Dominate search results with our comprehensive SEO services, including technical audits, keyword research, link building, and Core Web Vitals mastery.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-megaphone"></i></div>
+            <h3>Paid Media (PPC)</h3>
+            <p>Maximize ROI with data-driven PPC management on Google, Meta, and LinkedIn. We optimize every click for maximum conversion value.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-users-three"></i></div>
+            <h3>Social Media Marketing</h3>
+            <p>Build communities and drive engagement with strategic social media management, content creation, and targeted influencer outreach.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-pencil-circle"></i></div>
+            <h3>Content Marketing</h3>
+            <p>Fuel your inbound marketing funnel with high-quality articles, videos, and lead magnets that establish authority and convert prospects.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-code"></i></div>
+            <h3>Web & App Development</h3>
+            <p>We build blazing-fast Jamstack sites, headless CMS solutions, and secure, scalable web applications designed for performance and growth.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-chart-line-up"></i></div>
+            <h3>Conversion Rate Optimization</h3>
+            <p>Turn more visitors into customers with expert CRO services. We use A/B testing, heatmaps, and user journey analysis to boost your bottom line.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-envelope-simple"></i></div>
+            <h3>Email & Automation</h3>
+            <p>Nurture leads and retain customers with sophisticated email marketing automation flows, personalized campaigns, and detailed analytics.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-camera"></i></div>
+            <h3>Brand & Video Production</h3>
+            <p>Captivate your audience with stunning motion design, 3D explainer videos, and strategic video marketing campaigns that get results.</p>
+          </div>
+           <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-storefront"></i></div>
+            <h3>E-commerce Solutions</h3>
+            <p>Scale your online store with our complete e-commerce marketing services, including platform optimization, marketplace ads, and retention strategies.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-database"></i></div>
+            <h3>Data & Analytics</h3>
+            <p>Make smarter decisions with a modern data stack. Our marketing analytics experts provide attribution modeling, and clear BI dashboards.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-brain"></i></div>
+            <h3>AI & Machine Learning</h3>
+            <p>Leverage predictive analytics, audience modeling, and Generative AI for a powerful competitive edge in your online advertising efforts.</p>
+          </div>
+          <div class="card service-card reveal">
+            <div class="service-icon"><i class="ph-bold ph-microphone-stage"></i></div>
+            <h3>Podcast Production</h3>
+            <p>Launch and grow your brand's voice with our full-service podcast production, from strategy and setup to distribution and promotion.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+    <section id="process">
+        <div class="container reveal">
+            <h2 class="section-title">Our 4-Step Digital Growth <span class="highlight">Methodology</span></h2>
+            <p class="section-sub">We follow a structured, agile, and data-driven methodology to ensure predictable and scalable results for every digital marketing campaign.</p>
+            <div class="grid col-4">
+                <div class="card reveal">
+                    <div class="icon-wrap"><span class="num" style="color:var(--brand); font-size:32px; font-family:'Orbitron'">01</span> <b>Discovery & Strategy</b></div>
+                    <p>We dive deep into your business, market, and goals to build a custom digital marketing strategy and growth roadmap.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="icon-wrap"><span class="num" style="color:var(--brand); font-size:32px; font-family:'Orbitron'">02</span> <b>Implementation</b></div>
+                    <p>Our expert teams execute the plan with precision, from technical SEO setups to creative online advertising production.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="icon-wrap"><span class="num" style="color:var(--brand); font-size:32px; font-family:'Orbitron'">03</span> <b>Optimization & Testing</b></div>
+                    <p>We continuously analyze performance data, running A/B tests on landing pages, ads, and content to maximize campaign ROI.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="icon-wrap"><span class="num" style="color:var(--brand); font-size:32px; font-family:'Orbitron'">04</span> <b>Scale & Reporting</b></div>
+                    <p>Successful strategies are scaled across channels, backed by transparent reporting, marketing analytics, and actionable insights.</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section id="pricing">
+      <div class="container reveal">
+        <h2 class="section-title">Digital Marketing Pricing <span class="highlight">Plans</span></h2>
+        <p class="section-sub">Transparent, value-packed plans for businesses of all sizes. Purchase directly online to get started. Secure invoice & kickoff call scheduled within 24 hours.*</p>
+        <div class="grid col-3">
+          <div class="card reveal">
+            <div class="shine"></div>
+            <h3>Starter Growth</h3>
+            <div class="price">₹19,999<span>/mo</span></div>
+            <ul class="clean feature-list">
+              <li><i class="ph-fill ph-check-circle"></i> Foundational SEO & on-page optimization.</li>
+              <li><i class="ph-fill ph-check-circle"></i> 1x Paid channel management (Google or Meta).</li>
+              <li><i class="ph-fill ph-check-circle"></i> 1 high-converting landing page + analytics setup.</li>
+            </ul>
+            <div class="pack-actions">
+              <span class="tag">Best for Startups</span>
+              <button class="btn" onclick="addToCart('Starter Growth', 19999, 'Monthly growth plan')"><i class="ph-bold ph-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="shine"></div>
+            <h3>Performance Pro</h3>
+            <div class="price">₹49,999<span>/mo</span></div>
+            <ul class="clean feature-list">
+              <li><i class="ph-fill ph-check-circle"></i> Advanced SEO with a dedicated content engine.</li>
+              <li><i class="ph-fill ph-check-circle"></i> Google & Meta Ads management and optimization.</li>
+              <li><i class="ph-fill ph-check-circle"></i> Continuous CRO sprints + advanced tracking.</li>
+            </ul>
+            <div class="pack-actions">
+              <span class="tag">Most Popular</span>
+              <button class="btn" onclick="addToCart('Performance Pro', 49999, 'Comprehensive monthly plan')"><i class="ph-bold ph-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="shine"></div>
+            <h3>Enterprise Lab</h3>
+            <div class="price">₹1,49,999<span>/mo</span></div>
+            <ul class="clean feature-list">
+              <li><i class="ph-fill ph-check-circle"></i> Omni-channel strategy with Marketing Mix Modeling.</li>
+              <li><i class="ph-fill ph-check-circle"></i> Custom data warehouse & business intelligence dashboards.</li>
+              <li><i class="ph-fill ph-check-circle"></i> Full access to our 3D/video production studio.</li>
+            </ul>
+            <div class="pack-actions">
+              <span class="tag">For Scale-ups</span>
+              <button class="btn" onclick="addToCart('Enterprise Lab', 149999, 'Full-service enterprise plan')"><i class="ph-bold ph-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <small style="text-align:center; display:block; margin-top:16px; color:var(--muted)">*T&C apply. All prices are exclusive of GST. Payment gateway integration placeholder.</small>
+      </div>
+  </section>
+
+  <section id="achievements" class="container reveal">
+    <h2 class="section-title">Our Proven Track <span class="highlight">Record</span></h2>
+    <div class="grid col-4">
+      <div class="card kpi reveal"><div class="shine"></div><div class="num" data-kpi="212">0</div><div>Brands Scaled</div></div>
+      <div class="card kpi reveal"><div class="shine"></div><div class="num" data-kpi="97">0</div><div>Avg. NPS Score</div></div>
+      <div class="card kpi reveal"><div class="shine"></div><div class="num" data-kpi="8.4">0.0</div><div>Peak ROAS Achieved</div></div>
+      <div class="card kpi reveal"><div class="shine"></div><div class="num" data-kpi="36">0</div><div>Industry Verticals</div></div>
+    </div>
+    <hr class="sep" />
+    <div class="grid col-3">
+      <div class="card reveal">
+        <div class="icon-wrap"><i class="ph-bold ph-stack"></i><b>Our Tech Stack</b></div>
+        <p>GA4, GTM, BigQuery, Looker Studio, HubSpot, Ahrefs, Semrush, Meta & Google Ads, Klaviyo, WordPress, Next.js.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-wrap"><i class="ph-bold ph-seal-check"></i><b>Certifications</b></div>
+        <p>Google Premier Partner, Meta Certified Professionals, LinkedIn Marketing Labs, AWS Cloud Practitioner.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-wrap"><i class="ph-bold ph-handshake"></i><b>Our Guarantee</b></div>
+        <p>Clear goals, weekly performance insights, quarterly growth reviews; cancel anytime after the first sprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+      <div class="container reveal">
+        <h2 class="section-title">Digital Marketing Projects <span class="highlight">Showcase</span></h2>
+        <p class="section-sub">A peek at select case studies & motion work from our digital growth agency. Click to watch in high definition.</p>
+        <div class="grid col-3">
+          <div class="card reveal" onclick="openVideo('https://cdn.coverr.co/videos/coverr-metallic-gears-5469/1080p.mp4')">
+            <img src="https://i.vimeocdn.com/video/935574577-b3713f60b4111c1d8825c357591605c31754024808581e285094f09d17d5c0c8-d?mw=900&mh=506" alt="Industrial SaaS Marketing Project" style="width:100%; border-radius:12px; cursor:pointer"/>
+            <b>Industrial SaaS — Lead Generation</b>
+            <p>+212% qualified pipeline via product-led content marketing, SEO, and paid search campaigns.</p>
+          </div>
+          <div class="card reveal" onclick="openVideo('https://cdn.coverr.co/videos/coverr-digital-brain-4360/1080p.mp4')">
+            <img src="https://i.vimeocdn.com/video/909939632-15f92275b2253818610515091e0a297950c4c4146a8d7a1268393e83b4b5030d-d?mw=900&mh=506" alt="Healthcare AI Video Marketing Project" style="width:100%; border-radius:12px; cursor:pointer"/>
+            <b>Healthcare AI — Video Marketing</b>
+            <p>Video explainer + conversion microsite; reduced Customer Acquisition Cost (CAC) by 37% in 60 days.</p>
+          </div>
+          <div class="card reveal" onclick="openVideo('https://cdn.coverr.co/videos/coverr-glowing-bulb-9570/1080p.mp4')">
+            <img src="https://i.vimeocdn.com/video/1109121855-8854f068565b90f48f4ef117d3d29486c472d73503b223d6a4a6122d25624128-d?mw=900&mh=506" alt="E-commerce CRO Project" style="width:100%; border-radius:12px; cursor:pointer"/>
+            <b>E-commerce — CRO & E-commerce SEO</b>
+            <p>UGC ads, e-commerce SEO, and CRO; increased Average Order Value (AOV) by 18% with bundle experiments.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  <section id="testimonials">
+      <div class="container reveal">
+          <h2 class="section-title">What Our <span class="highlight">Clients</span> Say</h2>
+          <p class="section-sub">We're proud to build long-lasting partnerships. Here's what some of our clients have to share about their experience with our digital marketing services.</p>
+          <div class="swiper testimonial-slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                          <blockquote>"Working with 1ne Click Media was a game-changer. Their data-driven approach to digital marketing doubled our lead generation in just three months. Highly recommended!"</blockquote>
+                          <cite>Priya Sharma<span>CEO, Tech Innovators</span></cite>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                          <blockquote>"The team's expertise in technical SEO and PPC management is unparalleled. They are not just an agency; they are a true growth partner for our business."</blockquote>
+                          <cite>Rahul Verma<span>Marketing Head, FinCorp</span></cite>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                          <blockquote>"The 3D video they produced for our product launch was stunning and significantly boosted our conversion rates. Exceptional creativity and execution."</blockquote>
+                          <cite>Anjali Mehta<span>Founder, D2C Brands</span></cite>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+  </section>
+
+  <section id="experience" class="container reveal">
+    <h2 class="section-title">Our Agency <span class="highlight">Evolution</span></h2>
+    <div class="timeline">
+      <div class="node reveal">
+        <b>2016–2019 • Foundation</b>
+        <p>Built core performance marketing disciplines: search engine optimization (SEO), social media, analytics, and landing page systems.</p>
+      </div>
+      <div class="node reveal">
+        <b>2020–2022 • Scale & Data</b>
+        <p>Launched business intelligence stack, first-party data strategy, server-side tracking & Marketing Mix Modeling (MMM) pilots.</p>
+      </div>
+      <div class="node reveal">
+        <b>2023–2025 • AI Acceleration</b>
+        <p>Integrating creative automation, predictive audiences for online advertising, and gen-AI assisted content marketing operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+      <div class="container reveal">
+        <h2 class="section-title">Meet The Digital Growth <span class="highlight">Architects</span></h2>
+        <p class="section-sub">Our success is driven by a team of passionate strategists, analysts, designers, and media buyers united by a single mission: to build the future of digital growth.</p>
+
+        <div class="ceo-section reveal">
+            <div class="ceo-image">
+                <img alt="Rajveer Singh, CEO & Founder of 1ne Click Media" src="https://api.dicebear.com/7.x/initials/svg?seed=Rajveer%20Singh&backgroundType=gradientLinear&fontFamily=Verdana&radius=10&size=400" />
+            </div>
+            <div class="ceo-info">
+                <h2>Rajveer Singh</h2>
+                <h3>CEO & Founder</h3>
+                <p>With over a decade of experience at the intersection of technology and marketing, Rajveer founded 1ne Click Media to create a new breed of digital marketing agency—one that is deeply technical, relentlessly data-driven, and completely aligned with client success. His philosophy is simple: treat every client's business as our own and compound their growth through innovation and precision execution.</p>
+                <small class="addr">📞 +91 82889-99923<br>✉️ support@1neclickmedia.in</small>
+                <div class="socials" style="margin-top:16px;">
+                    <a href="#" class="ceo-socials" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" class="ceo-socials" title="Twitter/X"><i class="ph ph-twitter-logo"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid col-3">
+          <div class="card reveal"><img alt="Growth Lead" src="https://api.dicebear.com/7.x/shapes/svg?seed=Growth&shape1Color=ff2a55&shape2Color=a200ff&radius=12" style="width:100%;" /><h3>Growth Lead</h3><p>Performance Marketing & CRO</p></div>
+          <div class="card reveal"><img alt="Design Director" src="https://api.dicebear.com/7.x/shapes/svg?seed=Design&shape1Color=ff2a55&shape2Color=a200ff&radius=12" style="width:100%;" /><h3>Design Director</h3><p>3D • Motion Graphics • Brand Strategy</p></div>
+          <div class="card reveal"><img alt="Data Engineer" src="https://api.dicebear.com/7.x/shapes/svg?seed=Data&shape1Color=ff2a55&shape2Color=a200ff&radius=12" style="width:100%;" /><h3>Data Engineer</h3><p>Attribution Modeling & BI</p></div>
+        </div>
+    </div>
+  </section>
+
+  <section id="tours" class="container reveal">
+    <h2 class="section-title">Upcoming Digital Marketing <span class="highlight">Workshops</span></h2>
+    <p class="section-sub">Join our live workshops in major Indian cities for hands-on digital marketing training from industry experts.</p>
+    <div class="tours">
+      <div class="tour reveal"><b>New Delhi</b> <span>Oct 12–13, 2025</span> <button class="btn" onclick="addToCart('Tour Pass — New Delhi',1999, 'Workshop ticket')"><i class="ph-bold ph-ticket"></i> Get Pass</button></div>
+      <div class="tour reveal"><b>Mumbai</b> <span>Oct 25–26, 2025</span> <button class="btn" onclick="addToCart('Tour Pass — Mumbai',1999, 'Workshop ticket')"><i class="ph-bold ph-ticket"></i> Get Pass</button></div>
+      <div class="tour reveal"><b>Bengaluru</b> <span>Nov 8–9, 2025</span> <button class="btn" onclick="addToCart('Tour Pass — Bengaluru',1999, 'Workshop ticket')"><i class="ph-bold ph-ticket"></i> Get Pass</button></div>
+      <div class="tour reveal"><b>Chennai</b> <span>Nov 22–23, 2025</span> <button class="btn" onclick="addToCart('Tour Pass — Chennai',1999, 'Workshop ticket')"><i class="ph-bold ph-ticket"></i> Get Pass</button></div>
+      <div class="tour reveal"><b>Ludhiana</b> <span>Dec 6–7, 2025</span> <button class="btn" onclick="addToCart('Tour Pass — Ludhiana',1999, 'Workshop ticket')"><i class="ph-bold ph-ticket"></i> Get Pass</button></div>
+    </div>
+  </section>
+  
+  <section id="faq">
+      <div class="container reveal">
+          <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+          <div class="faq-accordion">
+              <div class="faq-item">
+                  <div class="faq-question">What kind of results can I expect from your digital marketing services? <i class="ph-bold ph-plus"></i></div>
+                  <div class="faq-answer"><p>Results vary by industry and budget, but our focus is always on measurable ROI. We establish clear KPIs (like leads, sales, or cost-per-acquisition) from day one and provide transparent reporting on our progress towards those goals.</p></div>
+              </div>
+              <div class="faq-item">
+                  <div class="faq-question">How soon will I see results from SEO and PPC campaigns? <i class="ph-bold ph-plus"></i></div>
+                  <div class="faq-answer"><p>Paid media campaigns (PPC) can show results within days of launch. SEO is a long-term strategy that typically yields significant results in 3-6 months. We aim for quick wins while building a sustainable long-term growth foundation.</p></div>
+              </div>
+              <div class="faq-item">
+                  <div class="faq-question">What is your pricing model for digital marketing? <i class="ph-bold ph-plus"></i></div>
+                  <div class="faq-answer"><p>We offer fixed-fee monthly retainers for our service packages, as outlined in our pricing section. This ensures you have a predictable marketing spend. For larger enterprise projects, we can also create custom proposals.</p></div>
+              </div>
+              <div class="faq-item">
+                  <div class="faq-question">Do I need to sign a long-term contract? <i class="ph-bold ph-plus"></i></div>
+                  <div class="faq-answer"><p>We believe in earning your business every month. Our standard agreements are month-to-month after an initial 3-month commitment. This gives us enough time to implement strategies and demonstrate value while giving you flexibility.</p></div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="offices" class="container reveal">
+    <h2 class="section-title">Our <span class="highlight">Offices</span></h2>
+    <div class="grid col-2">
+      <div class="card reveal">
+        <div class="icon-wrap"><i class="ph-bold ph-buildings"></i><b>Head Office — Delhi</b></div>
+        <p>ED 17 F/F, New Ashok Nagar, East Delhi, Delhi 110096</p>
+        <small class="addr">📞 +91 82889-99923 • ✉️ support@1neclickmedia.in</small>
+      </div>
+      <div class="card reveal">
+        <div class="icon-wrap"><i class="ph-bold ph-building"></i><b>Branch — Ludhiana</b></div>
+        <p>SCO 1, Aggar Nagar, Near GrandWalk Mall, Ferozepur Road, Ludhiana 141001</p>
+        <small class="addr">📞 +91 79827-27600 • ✉️ support@1neclickmedia.in</small>
+      </div>
+    </div>
+    <br/>
+    <div class="maps">
+      <div class="reveal">
+          <h4 style="margin-bottom: 12px;">Delhi Office - Map & Street View</h4>
+          <iframe class="map" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.812398517227!2d77.30691587528358!3d28.60541178491845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5ab3533b379%3A0xf63e5e4051a6a9b!2sNew%20Ashok%20Nagar%2C%20Delhi%2C%20110096!5e0!3m2!1sen!2sin!4v1694200000000"></iframe>
+          <iframe class="map" style="margin-top:16px" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m0!4v1694200000000!6m8!1m7!1sCAoSLEFGMVFpcE5rSXhRX1BqMndTNE9tM1JzZ2xXb0lVUmV6aW1fNENtY0tUSjB1!2m2!1d28.6054118!2d77.3094908!3f338.25!4f-2.68!5f0.78"></iframe>
+      </div>
+      <div class="reveal">
+          <h4 style="margin-bottom: 12px;">Ludhiana Office - Map & Street View</h4>
+          <iframe class="map" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.51173259695!2d75.8010048753738!3d30.89973877993416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a825126388901%3A0x6e9f9689285038c!2sAggar%20Nagar%20-%20Block%20A%2C%20Ludhiana%2C%20Punjab%20141012!5e0!3m2!1sen!2sin!4v1694200000001"></iframe>
+          <iframe class="map" style="margin-top:16px" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m0!4v1694200000001!6m8!1m7!1s2Vw-d-V6b3G8-oYJ2N-2Wg!2m2!1d30.8997388!2d75.80358!3f283.65!4f-5.49!5f0.78"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-bottom: 128px;">
+        <div class="container reveal">
+            <h2 class="section-title">Start Your Growth Journey <span class="highlight">Today</span></h2>
+            <div class="grid col-3">
+              <div class="card reveal">
+                <b>Talk to Sales</b>
+                <p>We respond within one working day. For urgent queries, please WhatsApp us.</p>
+                <p><i class="ph-bold ph-phone"></i> +91 82889-99923</p>
+                <p><i class="ph-bold ph-envelope"></i> support@1neclickmedia.in</p>
+                <div class="cta" style="margin-top:16px; justify-content:flex-start"><button class="btn" id="enquiryBtn3"><i class="ph-bold ph-paper-plane-tilt"></i> Send Enquiry</button></div>
+              </div>
+              <div class="card reveal">
+                <b>Business Hours</b>
+                <ul class="clean">
+                  <li>Mon–Sat: 9:00 AM – 6:30 PM</li>
+                  <li>Sun: On request</li>
+                </ul>
+              </div>
+              <div class="card reveal">
+                <b>Follow Us</b>
+                <div class="socials">
+                  <a class="tag" target="_blank" rel="noopener" href="https://instagram.com/1neclickmedia">Instagram</a>
+                  <a class="tag" target="_blank" rel="noopener" href="https://facebook.com/1neclick.media.inc">Facebook</a>
+                  <a class="tag" target="_blank" rel="noopener" href="https://youtube.com">YouTube</a>
+                  <a class="tag" target="_blank" rel="noopener" href="https://twitter.com/1neclickinc">Twitter / X</a>
+                  <a class="tag" target="_blank" rel="noopener" href="https://linkedin.com">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap; align-items:center">
+      <div>© <span id="year"></span> 1ne Click Media. All rights reserved.</div>
+      <div style="display:flex; gap:16px;">
+        <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Refunds</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floaters">
+    <a id="back-to-top" class="floater-btn" href="#home" aria-label="Back to top">
+        <i class="ph-bold ph-arrow-up" style="font-size:24px"></i>
+    </a>
+    <a class="float-whatsapp floater-btn" href="https://wa.me/918288999923" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="ph-bold ph-whatsapp-logo" style="font-size:32px"></i>
+    </a>
+</div>
+
+<aside class="cart" id="cart">
+    <div class="cart-header">
+        <h4><i class="ph-bold ph-shopping-cart"></i> Your Cart</h4>
+        <button class="btn" onclick="toggleCart(false)" style="padding:4px 8px">✖</button>
+    </div>
+    <div class="cart-body" id="cartItems"><p style="text-align:center; color:var(--muted)">Your cart is empty.</p></div>
+    <div class="cart-footer">
+        <div class="total"><span>Total</span><span id="cartTotal">₹0</span></div>
+        <div class="checkout">
+            <button class="btn" onclick="alert('Demo checkout — connect payment gateway.')"><i class="ph-bold ph-credit-card"></i> Checkout</button>
+            <button class="btn" onclick="clearCart()"><i class="ph-bold ph-trash"></i> Clear</button>
+        </div>
+    </div>
+</aside>
+
+<div class="modal" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="enquiryTitle">
+  <div class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3 id="enquiryTitle" style="margin:0">Send an Enquiry</h3>
+      <button class="btn" onclick="toggleEnquiry(false)" style="padding:4px 8px">✖</button>
+    </div>
+    <form class="form" onsubmit="event.preventDefault(); submitEnquiry(this);">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <input required type="text" name="name" placeholder="Your Name">
+        <input required type="email" name="email" placeholder="Your Email">
+      </div>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <select name="service">
+          <option value="">Select Service of Interest</option>
+          <option>SEO Engineering</option>
+          <option>Paid Media (PPC)</option>
+          <option>Social Media Marketing</option>
+          <option>Content Marketing</option>
+          <option>Web & App Development</option>
+          <option>Conversion Rate Optimization</option>
+          <option>E-commerce Solutions</option>
+          <option>Brand & Video Production</option>
+          <option>Enterprise Lab</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <button class="btn" type="submit"><i class="ph-bold ph-paper-plane-tilt"></i> Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="video-lightbox" onclick="closeVideo()"><div class="panel" id="video-panel"></div></div>
+
+<div class="modal" id="aiStrategyModal" role="dialog" aria-modal="true" aria-labelledby="aiStrategyTitle">
+  <div class="panel">
+    <div id="ai-modal-content">
+      <!-- Step 1: Form -->
+      <div id="ai-form-step">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h3 id="aiStrategyTitle" style="margin:0">✨ AI-Powered Strategy Builder</h3>
+          <button class="btn" onclick="toggleAiStrategyModal(false)" style="padding:4px 8px">✖</button>
+        </div>
+        <p class="section-sub" style="text-align:left; margin-bottom: 20px; font-size: 15px;">Tell us about your business to get a free, high-level marketing strategy outline generated by AI.</p>
+        <form class="form" id="aiStrategyForm">
+          <input required type="text" name="businessName" placeholder="Business Name">
+          <textarea required name="businessDesc" rows="3" placeholder="Briefly describe your business, products, or services."></textarea>
+          <select required name="goal">
+              <option value="">What is your primary goal?</option>
+              <option value="Increase online sales">Increase online sales</option>
+              <option value="Generate more leads">Generate more leads</option>
+              <option value="Build brand awareness">Build brand awareness</option>
+              <option value="Drive traffic to my website">Drive traffic to my website</option>
+          </select>
+          <div id="services-checklist">
+            <label>Services of Interest (select up to 3):</label>
+            <!-- Checkboxes will be dynamically inserted here -->
+          </div>
+          <button class="btn" type="submit"><i class="ph-bold ph-magic-wand"></i> Generate Strategy</button>
+        </form>
+      </div>
+      
+      <!-- Step 2: Loading -->
+      <div id="ai-loading-step" style="display:none; text-align:center; padding: 40px 0;">
+         <div class="gears" style="margin: 0 auto;"><div class="gear"></div><div class="gear small"></div></div>
+         <div class="loader-text" style="margin-top:24px;">Generating your custom strategy...</div>
+      </div>
+
+      <!-- Step 3: Result -->
+      <div id="ai-result-step" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h3 style="margin:0">Your AI Strategy Outline</h3>
+          <button class="btn" onclick="toggleAiStrategyModal(false)" style="padding:4px 8px">✖</button>
+        </div>
+        <div id="strategyResult" style="margin-top: 20px; max-height: 60vh; overflow-y: auto; padding-right: 10px;"></div>
+        <button class="btn" onclick="resetAiModal()" style="margin-top: 20px;"><i class="ph-bold ph-arrow-left"></i> Start Over</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cookie" id="cookie-consent">
+  <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="#">Learn more</a></p>
+  <div class="cookie-actions">
+    <button class="btn btn-secondary" id="decline-cookies">Decline</button>
+    <button class="btn" id="accept-cookies">Accept</button>
+  </div>
+</div>
+
+<div class="toast" id="toast">Item added to cart!</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  const loader = document.getElementById('loader');
+  const themeToggle = document.getElementById('themeToggle');
+  const enquiryModal = document.getElementById('enquiryModal');
+  const cartElement = document.getElementById('cart');
+  const body = document.body;
+
+  window.addEventListener('load', () => loader.classList.add('hidden'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  // =========================================
+  // ADVANCED CURSOR (SMOOTHER VERSION)
+  // =========================================
+  const cursorRing = document.querySelector('.cursor .ring');
+  const cursorDot = document.querySelector('.cursor .dot');
+
+  if (window.matchMedia("(pointer: fine)").matches) {
+    let mouseX = -100, mouseY = -100;
+    let ringX = -100, ringY = -100;
+    let isHovering = false;
+
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    const trace = () => {
+        let dX = mouseX - ringX;
+        let dY = mouseY - ringY;
+
+        ringX += dX * 0.15; // Slower easing for smoothness
+        ringY += dY * 0.15;
+        
+        let scale = isHovering ? ' scale(2.5)' : '';
+        let opacity = isHovering ? 0.5 : 1;
+        
+        cursorDot.style.transform = `translate(${mouseX - (cursorDot.offsetWidth / 2)}px, ${mouseY - (cursorDot.offsetHeight / 2)}px)`;
+        cursorRing.style.transform = `translate(${ringX - (cursorRing.offsetWidth / 2)}px, ${ringY - (cursorRing.offsetHeight / 2)}px)${scale}`;
+        cursorRing.style.opacity = opacity;
+
+        requestAnimationFrame(trace);
+    };
+    requestAnimationFrame(trace);
+    
+    document.querySelectorAll('a, button, .card, .faq-question, .tour, select, input, textarea, .toggle').forEach(el => {
+        el.addEventListener('mouseenter', () => { isHovering = true; });
+        el.addEventListener('mouseleave', () => { isHovering = false; });
+    });
+  }
+
+
+  // =========================================
+  // THEME SWITCHER (3 MODES)
+  // =========================================
+  const themes = ['day', 'night', 'terminal'];
+  let currentTheme = localStorage.getItem('theme') || 'night';
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeToggle.setAttribute('data-mode', theme);
+    localStorage.setItem('theme', theme);
+  };
+
+  themeToggle.addEventListener('click', () => {
+    let nextThemeIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+    currentTheme = themes[nextThemeIndex];
+    applyTheme(currentTheme);
+  });
+  
+  applyTheme(currentTheme);
+
+  // =========================================
+  // SCROLL-BASED UI & ANIMATIONS
+  // =========================================
+  const scrollProgress = document.getElementById('scroll-progress');
+  const backToTopBtn = document.getElementById('back-to-top');
+  const header = document.getElementById('main-header');
+  let lastScrollTop = 0;
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    // Scroll progress bar
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + '%';
+
+    // Back-to-top button
+    backToTopBtn.classList.toggle('show', scrollTop > 300);
+    
+    // Hide/show header on scroll
+    if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight){
+      header.classList.add('header-hidden');
+    } else {
+      header.classList.remove('header-hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  };
+  
+  window.addEventListener('scroll', handleScroll);
+
+  // Intersection Observer for reveal animations
+  const revealElements = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        if (entry.target.classList.contains('kpi')) {
+          animateKPI(entry.target.querySelector('.num'));
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  revealElements.forEach((el, index) => {
+      if (el.closest('.grid, .timeline, .tours')) {
+          el.style.setProperty('--delay', `${(index % 4) * 100}ms`);
+      }
+      observer.observe(el);
+  });
+  
+
+  // =========================================
+  // MOBILE NAVIGATION
+  // =========================================
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+  
+  const toggleMobileNav = (open) => {
+      mobileNav.classList.toggle('open', open);
+      mobileNavOverlay.classList.toggle('open', open);
+      body.style.overflow = open ? 'hidden' : '';
+      mobileMenuBtn.innerHTML = open ? '<i class="ph-bold ph-x"></i>' : '<i class="ph-bold ph-list"></i>';
+  };
+  
+  mobileMenuBtn.addEventListener('click', () => toggleMobileNav(!mobileNav.classList.contains('open')));
+  mobileNavOverlay.addEventListener('click', () => toggleMobileNav(false));
+  document.querySelectorAll('#mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => toggleMobileNav(false));
+  });
+
+  // =========================================
+  // INTERACTIVE COMPONENTS
+  // =========================================
+  const animateKPI = (el) => {
+    const target = parseFloat(el.dataset.kpi);
+    const duration = 2000;
+    let start = 0;
+    const stepTime = 20;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+    const isFloat = target % 1 !== 0;
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        clearInterval(timer);
+        start = target;
+      }
+      el.textContent = isFloat ? start.toFixed(1) : Math.floor(start);
+    }, stepTime);
+  };
+
+  new Swiper('.testimonial-slider', {
+    loop: true,
+    autoplay: { delay: 5000, disableOnInteraction: false },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: { 320: { slidesPerView: 1, spaceBetween: 20 }, 768: { slidesPerView: 1 } }
+  });
+
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      const wasActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if(!wasActive) item.classList.add('active');
+    });
+  });
+
+  // =========================================
+  // TYPING ANIMATION FOR HERO TITLE
+  // =========================================
+  const typingContainer = document.getElementById('typing-container');
+  const phrases = [
+      "Digital Marketing.",
+      "SEO Services.",
+      "PPC Management.",
+      "Web Development.",
+      "Growth Compounding."
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+      if (!typingContainer) return;
+      const currentPhrase = phrases[phraseIndex];
+      let displayText = isDeleting 
+          ? currentPhrase.substring(0, charIndex--)
+          : currentPhrase.substring(0, charIndex++);
+
+      typingContainer.innerHTML = `${displayText}<span class="typing-cursor"></span>`;
+
+      let typeSpeed = isDeleting ? 75 : 150;
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+          typeSpeed = 2000; // Pause at end
+          isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typeSpeed = 500; // Pause before new phrase
+      }
+
+      setTimeout(type, typeSpeed);
+  }
+  
+  type();
+
+
+  // =========================================
+  // MODALS & POPUPS
+  // =========================================
+  window.toggleEnquiry = (open) => {
+    enquiryModal.classList.toggle('open', open);
+  };
+  document.getElementById('enquiryBtn').addEventListener('click', () => toggleEnquiry(true));
+  document.getElementById('enquiryBtn3').addEventListener('click', () => toggleEnquiry(true));
+  enquiryModal.addEventListener('click', (e) => { if (e.target === enquiryModal) toggleEnquiry(false) });
+  
+  if (!sessionStorage.getItem('enquiryShown')) {
+    setTimeout(() => {
+        // toggleEnquiry(true); // Auto-popup disabled for better UX
+        sessionStorage.setItem('enquiryShown', 'true');
+    }, 5000);
+  }
+
+  window.submitEnquiry = (form) => {
+      alert("Enquiry submitted successfully! Our team will get in touch shortly. (This is a demo)");
+      toggleEnquiry(false);
+      form.reset();
+  }
+
+  window.toggleCart = (open) => cartElement.classList.toggle('open', open);
+  document.getElementById('cartBtn').addEventListener('click', () => toggleCart(true));
+
+  const videoLightbox = document.getElementById('video-lightbox');
+  const videoPanel = document.getElementById('video-panel');
+  window.openVideo = (src) => {
+    videoPanel.innerHTML = `<iframe src="${src}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    videoLightbox.classList.add('open');
+  };
+  window.closeVideo = () => {
+    videoPanel.innerHTML = '';
+    videoLightbox.classList.remove('open');
+  };
+
+  // Cookie Consent Banner
+  const cookieConsent = document.getElementById('cookie-consent');
+  if (cookieConsent) {
+    const acceptBtn = document.getElementById('accept-cookies');
+    const declineBtn = document.getElementById('decline-cookies');
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(() => cookieConsent.classList.add('show'), 3000);
+    }
+    acceptBtn.addEventListener('click', () => {
+      cookieConsent.classList.remove('show');
+      localStorage.setItem('cookieConsent', 'accepted');
+    });
+    declineBtn.addEventListener('click', () => {
+      cookieConsent.classList.remove('show');
+      localStorage.setItem('cookieConsent', 'declined');
+    });
+  }
+
+
+  // =========================================
+  // E-COMMERCE CART LOGIC
+  // =========================================
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItemsContainer = document.getElementById('cartItems');
+  const cartTotalEl = document.getElementById('cartTotal');
+  const cartCountEl = document.getElementById('cart-count');
+  const toastEl = document.getElementById('toast');
+  
+  const showToast = (message) => {
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), 3000);
+  }
+
+  const saveCart = () => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartDisplay();
+  };
+  
+  window.addToCart = (name, price, description) => {
+    const existingItem = cart.find(item => item.name === name);
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cart.push({ name, price, description, quantity: 1 });
+    }
+    saveCart();
+    showToast(`${name} added to cart!`);
+    toggleCart(true);
+  };
+  
+  window.changeQuantity = (name, amount) => {
+      const item = cart.find(item => item.name === name);
+      if(item) {
+          item.quantity += amount;
+          if (item.quantity <= 0) {
+              cart = cart.filter(cartItem => cartItem.name !== name);
+          }
+      }
+      saveCart();
+  }
+
+  window.clearCart = () => { cart = []; saveCart(); };
+
+  const updateCartDisplay = () => {
+    cartItemsContainer.innerHTML = cart.length === 0 ? '<p style="text-align:center; color:var(--muted)">Your cart is empty.</p>' : '';
+    if (cart.length > 0) {
+      cart.forEach(item => {
+        const itemEl = document.createElement('div');
+        itemEl.className = 'item';
+        itemEl.innerHTML = `
+          <div class="item-info"><div>${item.name}</div><small>${item.description}</small></div>
+          <div class="quantity">
+              <button onclick="changeQuantity('${item.name}', -1)">-</button>
+              <span>${item.quantity}</span>
+              <button onclick="changeQuantity('${item.name}', 1)">+</button>
+          </div>
+          <span>₹${(item.price * item.quantity).toLocaleString('en-IN')}</span>
+          <button class="remove-btn" onclick="changeQuantity('${item.name}', -Infinity)">✖</button>`;
+        cartItemsContainer.appendChild(itemEl);
+      });
+    }
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    cartTotalEl.textContent = `₹${total.toLocaleString('en-IN')}`;
+    cartCountEl.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+  };
+
+  updateCartDisplay();
+  
+  // =========================================
+  // HERO 3D & GYRO ANIMATION (THREE.JS)
+  // =========================================
+  function init3DBackground() {
+      const container = document.getElementById('hero-3d-bg');
+      if (!container) return;
+
+      let scene, camera, renderer, shape, particles;
+
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
+      camera.position.z = 6; // Moved camera back slightly
+
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(container.offsetWidth, container.offsetHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      container.appendChild(renderer.domElement);
+
+      const geometry = new THREE.IcosahedronGeometry(1.5, 1);
+      const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: 0.5 });
+      shape = new THREE.Mesh(geometry, material);
+      
+      // Position shape based on screen size
+      if (window.innerWidth < 768) {
+        shape.position.x = 0; // Center on mobile
+      } else {
+        shape.position.x = 1.2; // Move right on desktop
+      }
+      scene.add(shape);
+
+      const particlesGeometry = new THREE.BufferGeometry;
+      const particlesCount = 500;
+      const posArray = new Float32Array(particlesCount * 3);
+      for(let i = 0; i < particlesCount * 3; i++) {
+          posArray[i] = (Math.random() - 0.5) * 15;
+      }
+      particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+      const particlesMaterial = new THREE.PointsMaterial({ size: 0.015, color: 0xffffff, transparent: true, opacity: 0.5 });
+      particles = new THREE.Points(particlesGeometry, particlesMaterial);
+      scene.add(particles);
+
+      function animate() {
+          requestAnimationFrame(animate);
+          shape.rotation.x += 0.001;
+          shape.rotation.y += 0.001;
+          particles.rotation.y += 0.0005;
+          renderer.render(scene, camera);
+      }
+      animate();
+
+      function onWindowResize() {
+          camera.aspect = container.offsetWidth / container.offsetHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(container.offsetWidth, container.offsetHeight);
+          if (window.innerWidth < 768) {
+            shape.position.x = 0;
+          } else {
+            shape.position.x = 1.2;
+          }
+      }
+      window.addEventListener('resize', onWindowResize);
+
+      function onMouseMove(event) {
+          const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+          const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+          camera.position.x += (mouseX * 0.5 - camera.position.x) * 0.02;
+          camera.position.y += (mouseY * 0.5 - camera.position.y) * 0.02;
+          camera.lookAt(scene.position);
+      }
+      document.addEventListener('mousemove', onMouseMove);
+
+      function onDeviceOrientation(event) {
+          if (!event.gamma || !event.beta) return;
+          const gamma = event.gamma / 90; 
+          const beta = event.beta / 90;
+          camera.position.x += (gamma * 0.5 - camera.position.x) * 0.05;
+          camera.position.y += (beta * 0.5 - camera.position.y) * 0.05;
+          camera.lookAt(scene.position);
+      }
+      
+      if (window.DeviceOrientationEvent) {
+          window.addEventListener('deviceorientation', onDeviceOrientation);
+      }
+  }
+
+  init3DBackground();
+
+});
+</script>
+
+</body>
+</html>
+
